@@ -64,12 +64,13 @@
             this.listBoxTermekek.ItemHeight = 20;
             this.listBoxTermekek.Location = new System.Drawing.Point(0, 0);
             this.listBoxTermekek.Name = "listBoxTermekek";
-            this.listBoxTermekek.Size = new System.Drawing.Size(166, 329);
+            this.listBoxTermekek.Size = new System.Drawing.Size(166, 322);
             this.listBoxTermekek.TabIndex = 1;
             this.listBoxTermekek.SelectedIndexChanged += new System.EventHandler(this.listBoxTermekek_SelectedIndexChanged);
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.groupBox1.Controls.Add(this.button_vasarlas);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -90,6 +91,8 @@
             // 
             // button_vasarlas
             // 
+            this.button_vasarlas.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button_vasarlas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button_vasarlas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_vasarlas.Location = new System.Drawing.Point(16, 228);
             this.button_vasarlas.Name = "button_vasarlas";
@@ -97,7 +100,7 @@
             this.button_vasarlas.TabIndex = 8;
             this.button_vasarlas.Text = "Vásárlás";
             this.button_vasarlas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button_vasarlas.UseVisualStyleBackColor = true;
+            this.button_vasarlas.UseVisualStyleBackColor = false;
             this.button_vasarlas.Click += new System.EventHandler(this.button_vasarlas_Click);
             // 
             // label5
@@ -145,7 +148,7 @@
             0,
             0});
             this.numericUpDown_vasaroltDarab.Name = "numericUpDown_vasaroltDarab";
-            this.numericUpDown_vasaroltDarab.Size = new System.Drawing.Size(120, 26);
+            this.numericUpDown_vasaroltDarab.Size = new System.Drawing.Size(152, 26);
             this.numericUpDown_vasaroltDarab.TabIndex = 4;
             this.numericUpDown_vasaroltDarab.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numericUpDown_vasaroltDarab.Value = new decimal(new int[] {
@@ -169,7 +172,7 @@
             0,
             0});
             this.numericUpDown_ar.Name = "numericUpDown_ar";
-            this.numericUpDown_ar.Size = new System.Drawing.Size(120, 26);
+            this.numericUpDown_ar.Size = new System.Drawing.Size(152, 26);
             this.numericUpDown_ar.TabIndex = 4;
             this.numericUpDown_ar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numericUpDown_ar.Value = new decimal(new int[] {
@@ -183,7 +186,7 @@
             this.numericUpDown_raktarKeszlet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.numericUpDown_raktarKeszlet.Location = new System.Drawing.Point(149, 140);
             this.numericUpDown_raktarKeszlet.Name = "numericUpDown_raktarKeszlet";
-            this.numericUpDown_raktarKeszlet.Size = new System.Drawing.Size(120, 26);
+            this.numericUpDown_raktarKeszlet.Size = new System.Drawing.Size(152, 26);
             this.numericUpDown_raktarKeszlet.TabIndex = 4;
             this.numericUpDown_raktarKeszlet.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -211,7 +214,7 @@
             this.textBox_termekid.Location = new System.Drawing.Point(149, 20);
             this.textBox_termekid.Name = "textBox_termekid";
             this.textBox_termekid.ReadOnly = true;
-            this.textBox_termekid.Size = new System.Drawing.Size(90, 26);
+            this.textBox_termekid.Size = new System.Drawing.Size(152, 26);
             this.textBox_termekid.TabIndex = 1;
             // 
             // label1
@@ -226,12 +229,13 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.OliveDrab;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.terméToolStripMenuItem,
             this.felhasználóToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(166, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(370, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(321, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -242,8 +246,8 @@
             this.módosításToolStripMenuItem,
             this.törlésToolStripMenuItem});
             this.terméToolStripMenuItem.Name = "terméToolStripMenuItem";
-            this.terméToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
-            this.terméToolStripMenuItem.Text = "Termé";
+            this.terméToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.terméToolStripMenuItem.Text = "Termék";
             // 
             // újToolStripMenuItem
             // 
@@ -284,10 +288,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 329);
+            this.ClientSize = new System.Drawing.Size(487, 322);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.listBoxTermekek);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormVasarlas";
             this.Text = "FormVasarlas";
