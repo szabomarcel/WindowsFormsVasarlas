@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsVasarlas", "WindowsFormsVasarlas\WindowsFormsVasarlas.csproj", "{B874118F-D09B-4AD8-A054-CBEE4CE2A42F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B874118F-D09B-4AD8-A054-CBEE4CE2A42F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B874118F-D09B-4AD8-A054-CBEE4CE2A42F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B874118F-D09B-4AD8-A054-CBEE4CE2A42F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B874118F-D09B-4AD8-A054-CBEE4CE2A42F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA9C0669-373C-4096-B6EC-459C22B46F4B}
+	EndGlobalSection
+EndGlobal
