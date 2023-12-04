@@ -15,6 +15,9 @@ namespace WindowsFormsVasarlas
 {
     public partial class FormTermek : Form
     {
+        string mod;
+        string uzen;
+        string muv;
         public FormTermek()
         {
             InitializeComponent();
@@ -44,6 +47,18 @@ namespace WindowsFormsVasarlas
                 MessageBox.Show(ex.Message);
                 Environment.Exit(0);
             }
+            if (mod == "új")
+            {
+                button1.Text = "Hozzádava";
+            }
+            else if (mod == "modósítva")
+            {
+                button1.Text = "Modósítva";
+            }
+            else if (mod == "törölve")
+            {
+                button1.Text = "Törölve";
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -53,6 +68,29 @@ namespace WindowsFormsVasarlas
             textBox_crudnev.Text = term.termeknev;
             numericUpDown_crudar.Value = term.ar;
             numericUpDown_cruddb.Value = term.db;       
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (mod == "új")
+            {
+                Program.command.CommandText = @"INSERT INTO `termek`(`termekid`, `termeknev`, `ar`, `db`) VALUES (@vasarloid, @termekid, @datum, @vasaroltdb)";
+                MessageBox.Show("Sikeresen lett rögzítve!");
+            }
+            else if(mod == "modósít")
+            {
+                Program.command.CommandText = @"UPDATE `termek` SET `termekid`=@vasarloid,`termeknev`=@termekid,`ar`=@datum,`db`=@vasaroltdb WHERE 1";
+                MessageBox.Show("Sikeresen lett modósítva!");
+            }
+            else if(mod == "törlés")
+            {
+                Program.command.CommandText = @"DELETE FROM `termek` WHERE 0";
+                MessageBox.Show("Sikeresen lett törölve!");
+            }
+            else
+            {
+                MessageBox.Show("Sikertelen választás!");
+            }
         }
     }
 }
