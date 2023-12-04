@@ -119,19 +119,19 @@ namespace WindowsFormsVasarlas
         private void újToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormTermek formTermekUj = new FormTermek("új");
-            formTermekUj.ShowDialog();
+            formTermekUj.ShowDialog(); // model
         }
 
         private void módosításToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormTermek formTermekModositas = new FormTermek("módosítás");
-            formTermekModositas.ShowDialog();
+            formTermekModositas.ShowDialog(); // model
         }
 
         private void törlésToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormTermek formTermekTorles = new FormTermek("módosítás");
-            formTermekTorles.ShowDialog();
+            FormTermek formTermekTorles = new FormTermek("törlés");
+            formTermekTorles.ShowDialog(); // model
         }
     }
 }
